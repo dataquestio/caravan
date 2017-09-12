@@ -1,0 +1,22 @@
+{
+  "name": "interactive_code_embed",
+  "version": "1.0.0",
+  "description": "Dataquest Interactive Embeded Coding System",
+  "main": "src/test.html",
+  "scripts": {
+    "test": "browser-sync start -s 'src' -f 'src' --index 'test.html' --port 3001 --no-ui --logLevel silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dataquestio/interactive_code_embed.git"
+  },
+  "author": "Curtis M. Humphrey, Ph.D.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dataquestio/interactive_code_embed/issues"
+  },
+  "homepage": "https://github.com/dataquestio/interactive_code_embed#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}

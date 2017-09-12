@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="fragment" content="!">
+  <title idle-disabled="true">Dataquest Interactive Embeded Coding System Test Page</title>
+</head>
+<body>
+  <script src="dq_post_box.js"></script>
+  <iframe name="dq_editor" width="100%" height=700 src="//dqeditor.dataquest.io/">
+    <pre id="code">
+      x = True
+      count = 5
+      if x:
+        for count in range(count):
+          print(count)
+    </pre>
+    <pre id="hint">
+      # markdown here
+
+      * List
+      * List 2
+
+      ` code('example') `
+    </pre>
+    <pre id="answer-code" check-vars="dates, df" check-stdout>
+      import pandas as pd
+      import numpy as np
+      dates = pd.date_range('20130101', periods=6)
+      df = pd.DataFrame(np.random.randn(6,3), index=dates, columns=list('ABCD'))
+    </pre>
+  </iframe>
+</body>
+</html>
