@@ -6,7 +6,7 @@
 
 ```html
 <script src="//dqeditor.dataquest.io/dq_post_box.js"></script>
-<iframe name="dq_editor" width="100%" height=700 src="//dqeditor.dataquest.io/">
+<iframe name="dq_editor" width="100%" height=700 src="//dqeditor.dataquest.io/" style="border: none" >
   <pre id='code'>
   </pre>
   <pre id="hint">
@@ -36,7 +36,7 @@ The code provided here will be prepended to the student code before running.
 The code provide here will be used in the checks
 
 #### Checking variables
-To check variables between the answer-code and student code list them, common seperated on the attribue `check-vars=""` like `check-vars="x, count"
+To check variables between the answer-code and student code list them, common seperated on the attribue `check-vars=""` like `check-vars="x, count"`
 
 #### Checking output
 To check the output (i.e., stdout) add the attribute `check-stdout`
@@ -45,7 +45,7 @@ To check the output (i.e., stdout) add the attribute `check-stdout`
 
 ```html
 <script src="//dqeditor.dataquest.io/dq_post_box.js"></script>
-<iframe name="dq_editor" width="100%" height=700 src="//dqeditor.dataquest.io/">
+<iframe name="dq_editor" width="100%" height=700 src="//dqeditor.dataquest.io/" style="border: none" >
   <pre id='code'>
     a = 1
     b = 2

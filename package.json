@@ -2,9 +2,9 @@
   "name": "interactive_code_embed",
   "version": "1.0.0",
   "description": "Dataquest Interactive Embeded Coding System",
-  "main": "src/test.html",
+  "main": "src/examples.html",
   "scripts": {
-    "test": "browser-sync start -s 'src' -f 'src' --index 'test.html' --port 3001 --no-ui --logLevel silent"
+    "test": "browser-sync start -s 'examples' -f 'examples' --index 'example_of_direct_embedding.html' --port 3000 --no-ui --logLevel silent"
   },
   "repository": {
     "type": "git",
