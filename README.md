@@ -100,3 +100,10 @@ And here's the editor html:
 </iframe>
 
 ```
+
+## Live examples
+
+You can find caravan editors embedded in a few places, including:
+
+* [Numpy Tutorial](https://www.dataquest.io/blog/numpy-tutorial-python/)
+* [Data Science Cheat Sheet](https://www.dataquest.io/blog/data-science-python-cheat-sheet/)
