@@ -1,5 +1,4 @@
-# Dataquest Embediable Interactive Code System
-
+# Dataquest Embeddable Interactive Code System
 
 ## Usage Steps
 1) Add the following html to your blog/site
@@ -7,11 +6,11 @@
 ```html
 <script src="//dqeditor.dataquest.io/dq_post_box.js"></script>
 <iframe name="dq_editor" width="100%" height=700 src="//dqeditor.dataquest.io/" style="border: none" >
+  <pre id='initialization-code'>
+  </pre>
   <pre id='code'>
   </pre>
   <pre id="hint">
-  </pre>
-  <pre id='initialization-code'>
   </pre>
   <pre id='answer-code' check-vars="">
   </pre>
@@ -39,7 +38,8 @@ The code provide here will be used in the checks
 To check variables between the answer-code and student code list them, common seperated on the attribue `check-vars=""` like `check-vars="x, count"`
 
 #### Checking output
-To check the output (i.e., stdout) add the attribute `check-stdout`
+To check the output (i.e., stdout) add the attribute `check-stdout`. If you do not want to check the stdout remove the attribute.
+
 
 ## Example
 
