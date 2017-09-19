@@ -1,12 +1,12 @@
 # Dataquest Caravan
 
-Embed a code editor in your blog that allows your visitors to write code, run it, and get answer checked.  The same great interface that powers Dataquest is now available to you!
+Embed a code editor in your blog that allows your visitors to write code, run it, and get answer checked.  The same great interface that powers [Dataquest](https://www.dataquest.io) is now available to you!
 
 ![Editor Screenshot](https://s3.amazonaws.com/dq-content/caravan/editor_screen.png)
 
 ## Usage steps
 
-In order to use the editor, you'll need to import a javascript library globally, then instantiate each editor with custom HTML.
+In order to use the editor, you'll need to import a javascript library globally, then instantiate each editor with some HTML.
 
 Here's the import code for the javascript library:
 
@@ -52,7 +52,7 @@ The markdown text in this section will be shown when the student clicks on the "
 The code provide here is the correct answer code.  This will be used to answer check the student, and to generate dynamic hints when students get the answer incorrect.
 
 #### Checking variables
-To check variables between the answer code and student code list them, common seperated on the attribue `check-vars=""` like `check-vars="x, count"`.  Make sure that these variables are defined in the initial code, display code, or answer code.  This will check the variable values in the answer code against the variable values in the student code.
+To check variables between the answer code and student code list them, comma separated on the attribue `check-vars=""` like `check-vars="x, count"`.  Make sure that these variables are defined in the initial code, display code, or answer code.  This will check the variable values in the answer code against the variable values in the student code.
 
 #### Checking output
 To check the output of a student's code, add the attribute `check-stdout`.  If you do not want to check the stdout remove the attribute.  This will match the output of the answer code with the output of the student code, and see if there are differences.
@@ -101,9 +101,13 @@ And here's the editor html:
 
 ```
 
+## Wordpress
+
+If you're using wordpress to host your site, see our plugin [here](https://github.com/dataquestio/caravan_wordpress) that makes things easier.
+
 ## Live examples
 
 You can find caravan editors embedded in a few places, including:
 
-* [Numpy Tutorial](https://www.dataquest.io/blog/numpy-tutorial-python/)
+* [NumPy Tutorial](https://www.dataquest.io/blog/numpy-tutorial-python/)
 * [Data Science Cheat Sheet](https://www.dataquest.io/blog/data-science-python-cheat-sheet/)
