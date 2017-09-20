@@ -90,6 +90,7 @@ And here's the editor html:
       * Print out `first_column`.
   </pre>
   <pre id="answer-code" check-vars="first_column">
+      array_one = np.zeros([3,4])
       array_two = np.zeros([6,4])
       array_two[:,:] = 1
 
