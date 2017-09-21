@@ -73,7 +73,7 @@ Now that you understand NumPy arrays a bit, let's see if you can complete a chal
 And here's the editor html:
 
 ```html
-<iframe name="dq_editor" width="100%" height="350" >
+<iframe name="dq_editor" width="100%" height="350" src="//dqeditor.dataquest.io/" style="border: none">
   <pre id="initialization-code">
       import numpy as np
   </pre>
