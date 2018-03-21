@@ -57,6 +57,43 @@ To check variables between the answer code and student code list them, comma sep
 #### Checking output
 To check the output of a student's code, add the attribute `check-stdout`.  If you do not want to check the stdout remove the attribute.  This will match the output of the answer code with the output of the student code, and see if there are differences.
 
+## Loading datasets
+There are two convenience functions you can use to create dataset files, either from the web or inline in your initialization code:
+
+```
+DQ__download_dataset(url, filename)
+```
+
+will download the file at `url` and save it in the user directory with the given `filename`.
+
+For example:
+
+```
+DQ__download_dataset(
+    'https://data.cityofnewyork.us/api/views/kku6-nxdu/rows.csv',
+    'demo_stats.csv')
+```
+
+downloads the New York demographic statistics dataset and makes it available to the student as `demo_stats.csv`.
+
+```
+DQ__load_dataset(data, filename)
+```
+
+allows you to create your own dataset file from a list of lists. For example:
+
+```
+DQ__load_dataset([
+    ['date', 'min-temp', 'max-temp'],
+    ['1989-04-05', '-5', '8'],
+    ['1989-04-06', '-10', '0'],
+    ['1989-04-07', '-1', '8'],
+    ['1989-04-08', '7', '15'],
+]], 'day_temps.csv')
+```
+
+creates a small table of temperatures in the csv file `day_temps.csv`.
+
 ## Full example
 
 In this example, you'd have the following setup text show on your blog before below editor:
