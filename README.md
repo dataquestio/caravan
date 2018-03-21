@@ -60,7 +60,7 @@ To check the output of a student's code, add the attribute `check-stdout`.  If y
 ## Loading datasets
 There are two convenience functions you can use to create dataset files, either from the web or inline in your initialization code:
 
-```
+```python
 DQ__download_dataset(url, filename)
 ```
 
@@ -68,7 +68,7 @@ will download the file at `url` and save it in the user directory with the given
 
 For example:
 
-```
+```python
 DQ__download_dataset(
     'https://data.cityofnewyork.us/api/views/kku6-nxdu/rows.csv',
     'demo_stats.csv')
@@ -76,13 +76,13 @@ DQ__download_dataset(
 
 downloads the New York demographic statistics dataset and makes it available to the student as `demo_stats.csv`.
 
-```
+```python
 DQ__load_dataset(data, filename)
 ```
 
 allows you to create your own dataset file from a list of lists. For example:
 
-```
+```python
 DQ__load_dataset([
     ['date', 'min-temp', 'max-temp'],
     ['1989-04-05', '-5', '8'],
